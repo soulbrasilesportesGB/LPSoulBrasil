@@ -13,7 +13,7 @@ const config: Config = {
         // Soul Brasil Esportes custom palette
         soul: {
           teal: '#009c99',
-          yellow: '#e8d92e', 
+          yellow: '#e8d92e',
           gold: '#f5cc78',
           orange: '#e8b52e',
           green: '#08704F',
@@ -62,8 +62,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        'bebas': ['Bebas Neue', 'cursive'],
-        'inter': ['Inter', 'sans-serif'],
+        'bebas': ['var(--font-bebas)', 'cursive'],
+        'inter': ['var(--font-inter)', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

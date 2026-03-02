@@ -9,10 +9,10 @@ import { LogoCloud } from '@/components/ui/logo-cloud';
 import { CTABlock } from '@/components/ui/cta-block';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { 
-  Trophy, 
-  Target, 
-  Users, 
+import {
+  Trophy,
+  Target,
+  Users,
   BookOpen,
   TrendingUp,
   Award,
@@ -132,18 +132,18 @@ export default function Home() {
 
       {/* Hero Section */}
       <Hero
-  title="O novo Portal da Soul já está no ar."
-  description="Organizamos a relação entre empresas e atletas com processo, governança e operação estruturada."
-  primaryCta={{
-    text: 'Acessar o Portal',
-    href: 'https://app.soulbrasil.co/'
-  }}
-  secondaryCta={{
-    text: 'Entender a nova Soul',
-    href: '/sobre'
-  }}
-  variant="split"
-/>
+        title="O novo Portal da Soul já está no ar."
+        description="Organizamos a relação entre empresas e atletas com processo, governança e operação estruturada."
+        primaryCta={{
+          text: 'Acessar o Portal',
+          href: 'https://app.soulbrasil.co/'
+        }}
+        secondaryCta={{
+          text: 'Entender a nova Soul',
+          href: '/sobre'
+        }}
+        variant="split"
+      />
 
       {/* Services Section}
       <SectionContainer id="servicos" background="gray">
@@ -201,7 +201,7 @@ export default function Home() {
           ))}
         </div>
       </SectionContainer>
-        */}  
+        */}
       {/* Metrics Section */}
       <SectionContainer background="gradient">
         <div className="text-center mb-16">
@@ -239,82 +239,82 @@ export default function Home() {
       </SectionContainer>
 
       {/* O que muda com o novo ciclo */}
-<SectionContainer background="gray">
-  <div className="max-w-6xl mx-auto">
-    <div className="rounded-3xl bg-white border border-gray-100 shadow-lg p-6 sm:p-8 md:p-10">
-      <motion.div
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
-        className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8"
-      >
-        {/* Coluna esquerda */}
-        <div className="lg:w-[48%]">
-          <p className="text-xs font-semibold text-soul-teal uppercase tracking-wider">
-            Novo ciclo
-          </p>
-
-          <h2 className="mt-3 text-4xl md:text-5xl font-bebas font-bold text-soul-dark leading-[0.95]">
-            O que muda com o novo ciclo
-          </h2>
-
-          <p className="mt-5 text-lg md:text-xl text-gray-700 leading-relaxed">
-            A Soul evoluiu: saímos de um modelo centrado em registro de jornada esportiva
-            para uma estrutura focada em <strong>visibilidade qualificada</strong> e
-            <strong> conexões organizadas</strong> entre parceiros e atletas.
-          </p>
-
-          <p className="mt-4 text-lg md:text-xl text-gray-700 leading-relaxed">
-            Hoje, nosso foco é <strong>governar</strong> essa relação com método, processo e segurança.
-          </p>
-
-          <div className="mt-6">
-            <Link
-              href="/sobre"
-              className="inline-flex items-center justify-center rounded-full bg-soul-teal px-5 py-3 text-white font-medium hover:bg-soul-teal/90 transition-colors"
+      <SectionContainer background="gray">
+        <div className="max-w-6xl mx-auto">
+          <div className="rounded-3xl bg-white border border-gray-100 shadow-lg p-6 sm:p-8 md:p-10">
+            <motion.div
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8"
             >
-              Entender a nova Soul
-              <span className="ml-2">→</span>
-            </Link>
+              {/* Coluna esquerda */}
+              <div className="lg:w-[48%]">
+                <p className="text-xs font-semibold text-soul-teal uppercase tracking-wider">
+                  Novo ciclo
+                </p>
+
+                <h2 className="mt-3 text-4xl md:text-5xl font-bebas font-bold text-soul-dark leading-[0.95]">
+                  O que muda com o novo ciclo
+                </h2>
+
+                <p className="mt-5 text-lg md:text-xl text-gray-700 leading-relaxed">
+                  A Soul evoluiu: saímos de um modelo centrado em registro de jornada esportiva
+                  para uma estrutura focada em <strong>visibilidade qualificada</strong> e
+                  <strong> conexões organizadas</strong> entre parceiros e atletas.
+                </p>
+
+                <p className="mt-4 text-lg md:text-xl text-gray-700 leading-relaxed">
+                  Hoje, nosso foco é <strong>governar</strong> essa relação com método, processo e segurança.
+                </p>
+
+                <div className="mt-6">
+                  <Link
+                    href="/sobre"
+                    className="inline-flex items-center justify-center rounded-full bg-soul-teal px-5 py-3 text-white font-medium hover:bg-soul-teal/90 transition-colors"
+                  >
+                    Entender a nova Soul
+                    <span className="ml-2">→</span>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Coluna direita: lista com ênfase */}
+              <div className="lg:w-[52%]">
+                <div className="rounded-2xl bg-soul-teal/10 border border-soul-teal/20 p-5 sm:p-6">
+                  <p className="text-sm font-semibold text-soul-dark">
+                    O que passa a ser central na operação
+                  </p>
+
+                  <ul className="mt-4 space-y-3 text-gray-800">
+                    <li className="flex items-start gap-3">
+                      <span className="mt-1 h-2 w-2 rounded-full bg-soul-teal shrink-0" />
+                      <span><strong>Visibilidade qualificada</strong> para decisores (não “exposição”)</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="mt-1 h-2 w-2 rounded-full bg-soul-teal shrink-0" />
+                      <span><strong>Conexões</strong> com critérios e regras claras</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="mt-1 h-2 w-2 rounded-full bg-soul-teal shrink-0" />
+                      <span><strong>Contratos</strong> e documentação estruturada</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="mt-1 h-2 w-2 rounded-full bg-soul-teal shrink-0" />
+                      <span><strong>Acompanhamento</strong> da operação (não só “conectar e sumir”)</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="mt-1 h-2 w-2 rounded-full bg-soul-teal shrink-0" />
+                      <span><strong>Redução</strong> de improviso e informalidade</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
-
-        {/* Coluna direita: lista com ênfase */}
-        <div className="lg:w-[52%]">
-          <div className="rounded-2xl bg-soul-teal/10 border border-soul-teal/20 p-5 sm:p-6">
-            <p className="text-sm font-semibold text-soul-dark">
-              O que passa a ser central na operação
-            </p>
-
-            <ul className="mt-4 space-y-3 text-gray-800">
-              <li className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-soul-teal shrink-0" />
-                <span><strong>Visibilidade qualificada</strong> para decisores (não “exposição”)</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-soul-teal shrink-0" />
-                <span><strong>Conexões</strong> com critérios e regras claras</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-soul-teal shrink-0" />
-                <span><strong>Contratos</strong> e documentação estruturada</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-soul-teal shrink-0" />
-                <span><strong>Acompanhamento</strong> da operação (não só “conectar e sumir”)</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-soul-teal shrink-0" />
-                <span><strong>Redução</strong> de improviso e informalidade</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </motion.div>
-    </div>
-  </div>
-</SectionContainer>
+      </SectionContainer>
 
       {/* Testimonials Section */}
       <SectionContainer id="testimonials">
@@ -328,7 +328,7 @@ export default function Home() {
           >
             Confiança na prática
           </motion.p>
-          
+
           <motion.h2
             className="text-4xl md:text-5xl font-bebas font-bold text-soul-dark mb-6"
             initial={{ opacity: 0, y: 30 }}
@@ -356,106 +356,106 @@ export default function Home() {
       </SectionContainer>
 
       {/* Parceiros */}
-<SectionContainer background="gray">
-  <div className="max-w-6xl mx-auto">
-    <h2 className="text-center text-3xl md:text-4xl font-bebas font-bold text-soul-dark mb-10">
-      Parceiros
-    </h2>
+      <SectionContainer background="gray">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-center text-3xl md:text-4xl font-bebas font-bold text-soul-dark mb-10">
+            Parceiros
+          </h2>
 
-    <div className="space-y-10">
-      {/* Afiliada a */}
-      <div>
-        <p className="text-xs sm:text-sm uppercase tracking-wide text-gray-500 mb-4 text-center">
-          Startup Afiliada
-        </p>
+          <div className="space-y-10">
+            {/* Afiliada a */}
+            <div>
+              <p className="text-xs sm:text-sm uppercase tracking-wide text-gray-500 mb-4 text-center">
+                Startup Afiliada
+              </p>
 
-        <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-6 opacity-80">
-          {[
-            { src: "/logos/arena-hub.png", alt: "Arena Hub" },
-            { src: "/logos/sportstech-latam.png", alt: "SportsTech Latam" },
-            { src: "/logos/cwb-startups.png", alt: "CWB Startups" },
-          ].map((logo) => (
-            <div
-              key={logo.src}
-              className="w-[180px] h-[80px] flex items-center justify-center"
-            >
-              <img
-                src={logo.src}
-                alt={logo.alt}
-                className="max-w-full max-h-full object-contain"
-              />
+              <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-6 opacity-80">
+                {[
+                  { src: "/logos/arena-hub.png", alt: "Arena Hub" },
+                  { src: "/logos/sportstech-latam.png", alt: "SportsTech Latam" },
+                  { src: "/logos/cwb-startups.png", alt: "CWB Startups" },
+                ].map((logo) => (
+                  <div
+                    key={logo.src}
+                    className="w-[180px] h-[80px] flex items-center justify-center"
+                  >
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
-        </div>
-      </div>
 
-      {/* Startup residente */}
-      <div>
-        <p className="text-xs sm:text-sm uppercase tracking-wide text-gray-500 mb-4 text-center">
-          Startup residente
-        </p>
+            {/* Startup residente */}
+            <div>
+              <p className="text-xs sm:text-sm uppercase tracking-wide text-gray-500 mb-4 text-center">
+                Startup residente
+              </p>
 
-        <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-6 opacity-80">
-          {[
-            { src: "/logos/worktiba.png", alt: "Worktiba" },
-          ].map((logo) => (
-            <div
-              key={logo.src}
-              className="w-[180px] h-[80px] flex items-center justify-center"
-            >
-              <img
-                src={logo.src}
-                alt={logo.alt}
-                className="max-w-full max-h-full object-contain"
-              />
+              <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-6 opacity-80">
+                {[
+                  { src: "/logos/worktiba.png", alt: "Worktiba" },
+                ].map((logo) => (
+                  <div
+                    key={logo.src}
+                    className="w-[180px] h-[80px] flex items-center justify-center"
+                  >
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
-        </div>
-      </div>
 
-      {/* Programa 2025 */}
-      <div>
-        <p className="text-xs sm:text-sm uppercase tracking-wide text-gray-500 mb-4 text-center">
-          Startup selecionada (2025)
-        </p>
+            {/* Programa 2025 */}
+            <div>
+              <p className="text-xs sm:text-sm uppercase tracking-wide text-gray-500 mb-4 text-center">
+                Startup selecionada (2025)
+              </p>
 
-        <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-6 opacity-80">
-          {[
-            { src: "/logos/parana-anjo-inovador.png", alt: "Paraná Anjo Inovador" },
-            { src: "/logos/secretaria-inovacao-ia.png", alt: "Secretaria da Inovação e Inteligência Artificial" },
-          ].map((logo) => (
-            <div
-              key={logo.src}
-              className="w-[180px] h-[80px] flex items-center justify-center"
-            >
-              <img
-                src={logo.src}
-                alt={logo.alt}
-                className="max-w-full max-h-full object-contain"
-              />
+              <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-6 opacity-80">
+                {[
+                  { src: "/logos/parana-anjo-inovador.png", alt: "Paraná Anjo Inovador" },
+                  { src: "/logos/secretaria-inovacao-ia.png", alt: "Secretaria da Inovação e Inteligência Artificial" },
+                ].map((logo) => (
+                  <div
+                    key={logo.src}
+                    className="w-[180px] h-[80px] flex items-center justify-center"
+                  >
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</SectionContainer>
+      </SectionContainer>
 
 
       {/* CTA Section */}
       <CTABlock
-  subtitle="Pronto para operar com mais estrutura no esporte?"
-  title="Conheça o novo ciclo da Soul"
-  description="O Portal da Soul organiza a relação entre empresas e atletas com governança, critérios e acompanhamento."
-  primaryCta={{
-    text: 'Acessar o Portal',
-    href: 'https://app.soulbrasil.co/'
-  }}
-  secondaryCta={{
-    text: 'Falar com a Soul',
-    href: '/contato'
-  }}
-/>
+        subtitle="Pronto para operar com mais estrutura no esporte?"
+        title="Conheça o novo ciclo da Soul"
+        description="O Portal da Soul organiza a relação entre empresas e atletas com governança, critérios e acompanhamento."
+        primaryCta={{
+          text: 'Acessar o Portal',
+          href: 'https://app.soulbrasil.co/'
+        }}
+        secondaryCta={{
+          text: 'Falar com a Soul',
+          href: '/contato'
+        }}
+      />
     </>
   );
 }
