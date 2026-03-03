@@ -54,7 +54,7 @@ export function ParceirosAuthoritySection() {
                         className="bg-white/5 border border-white/10 p-10 rounded-2xl backdrop-blur-sm flex flex-col items-center text-center group hover:bg-white/10 transition-all duration-300"
                     >
                         <div className="w-20 h-20 rounded-full bg-soul-teal/20 flex items-center justify-center mb-8 group-hover:bg-soul-teal group-hover:scale-110 transition-all">
-                            <item.icon className="w-10 h-10 text-soul-teal" />
+                            <item.icon className="w-10 h-10 text-soul-teal group-hover:text-white transition-colors" />
                         </div>
                         <h3 className="text-2xl font-bold mb-3 tracking-tight">
                             {item.label}
