@@ -59,7 +59,7 @@ export function AthleteHero() {
                             variants={fadeInUp}
                             className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl leading-relaxed"
                         >
-                            A Soul organiza o acesso a empresas com critérios claros, processo e governança.
+                            A Soul conecta você a parcerias e patrocínios — com um passo a passo definido e regras claras do começo ao fim.
                         </motion.p>
 
                         <motion.div variants={fadeInUp}>

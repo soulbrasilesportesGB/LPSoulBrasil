@@ -7,23 +7,23 @@ import { SectionContainer } from '@/components/ui/section-container';
 
 const benefits = [
     {
-        title: 'Acesso a empresas com critério',
-        description: 'Seu perfil fica disponível para decisores, com critérios claros de seleção.',
+        title: 'Parcerias e patrocínios ao seu alcance',
+        description: 'Seu perfil fica visível para empresas — e elas já sabem o que procuram num atleta.',
         icon: LayoutGrid,
     },
     {
-        title: 'Relação organizada',
-        description: 'Contratos, regras definidas e acompanhamento ao longo do ciclo.',
+        title: 'Contrato com regras claras',
+        description: 'Contratos com regras claras e acompanhamento em cada etapa da parceria.',
         icon: ShieldCheck,
     },
     {
-        title: 'Intermediação com método',
-        description: 'A Soul estrutura a conexão e reduz a informalidade na negociação.',
+        title: 'Sem achismo, sem informalidade',
+        description: 'A Soul cuida da negociação para que nada fique só no boca a boca.',
         icon: Handshake,
     },
     {
-        title: 'Governança real',
-        description: 'Operação documentada, com previsibilidade e organização.',
+        title: 'Tudo documentado e transparente',
+        description: 'Você sabe exatamente o que está acontecendo em cada passo a passo.',
         icon: FileText,
     },
 ];

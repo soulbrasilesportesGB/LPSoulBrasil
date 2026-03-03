@@ -25,8 +25,8 @@ export function MarketDataSection() {
                     viewport={{ once: true }}
                     className="text-2xl md:text-5xl font-medium text-soul-dark leading-tight"
                 >
-                    O esporte ainda depende de networking fechado e informalidade. <br className="hidden md:block" />
-                    <span className="text-soul-teal font-bold italic">A Soul organiza acesso</span> e estrutura essa relação com governança e processo.
+                    Conseguir patrocínio ainda depende de quem você conhece — não do que você conquista. <br className="hidden md:block" />
+                    <span className="text-soul-teal font-bold italic">A Soul muda isso:</span> conecta atletas a parcerias com um passo a passo claro e regras que protegem todo mundo.
                 </motion.p>
             </div>
         </SectionContainer>

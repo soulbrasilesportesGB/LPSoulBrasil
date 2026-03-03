@@ -12,8 +12,8 @@ const steps = [
         color: 'bg-soul-teal',
     },
     {
-        title: 'Torne-se elegível',
-        description: 'Seu perfil passa a compor ciclos e oportunidades estruturadas.',
+        title: 'Fique pronto para oportunidades',
+        description: 'Seu perfil entra no passo a passo da Soul e fica disponível para parcerias e patrocínios.',
         image: 'https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&q=80&w=400&h=400',
         color: 'bg-soul-yellow',
     },

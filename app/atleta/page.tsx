@@ -61,8 +61,8 @@ export default function AthletePage() {
                             </Button>
                         </Link>
                         <p className="mt-8 text-gray-500 text-xl font-medium max-w-xl mx-auto leading-relaxed">
-                            Sem mensalidade. Sem networking fechado. <br />
-                            <span className="text-soul-teal font-bold uppercase tracking-wider text-sm">Apenas processo e governança.</span>
+                            Sem mensalidade. Sem indicação. <br />
+                            <span className="text-soul-teal font-bold uppercase tracking-wider text-sm">Só parcerias com regras claras.</span>
                         </p>
                     </motion.div>
                 </div>

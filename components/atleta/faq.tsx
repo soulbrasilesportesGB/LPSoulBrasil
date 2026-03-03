@@ -11,9 +11,9 @@ const faqs = [
         answer: (
             <div className="space-y-4">
                 <p>Não.</p>
-                <p>A Soul organiza o acesso e estrutura a relação entre empresas e atletas com critérios claros e processo definido.</p>
-                <p>A conexão depende do perfil do atleta, do momento e dos critérios estabelecidos pela empresa.</p>
-                <p>A Soul não garante patrocínio ou performance esportiva.</p>
+                <p>A Soul conecta você a empresas e organiza essa relação com regras claras — mas não garante que a parceria vai acontecer.</p>
+                <p>A conexão depende do seu perfil, do momento e do que cada empresa está procurando.</p>
+                <p>O que a Soul garante é que, se houver match, tudo acontece de forma organizada e documentada.</p>
             </div>
         ),
     },
@@ -22,37 +22,37 @@ const faqs = [
         answer: (
             <div className="space-y-4">
                 <p>Não há mensalidade para o atleta.</p>
-                <p>A Soul trabalha na estruturação da relação com as empresas. Quando existe uma conexão formalizada, há uma taxa de gestão sobre a transação, referente à intermediação e organização da operação.</p>
+                <p>Quando uma parceria é fechada, a Soul cobra uma taxa de gestão sobre o valor combinado — referente à intermediação e ao acompanhamento da parceria.</p>
             </div>
         ),
     },
     {
-        question: '3) Quem define os critérios de seleção?',
+        question: '3) O que as empresas procuram num atleta?',
         answer: (
             <div className="space-y-4">
-                <p>Os critérios são definidos pela empresa.</p>
-                <p>A Soul organiza filtros e estrutura o processo, mas a decisão final de conexão considera o alinhamento entre perfil do atleta, objetivos da empresa e regras estabelecidas para cada ciclo.</p>
+                <p>Cada empresa define o que está procurando.</p>
+                <p>A Soul organiza esse filtro e ajuda a conectar seu perfil com as oportunidades certas — mas a decisão final considera o alinhamento entre o que você oferece e o que a empresa quer na parceria.</p>
             </div>
         ),
     },
     {
-        question: '4) Como funciona a taxa (fee) da Soul?',
+        question: '4) Como funciona a taxa da Soul?',
         answer: (
             <div className="space-y-4">
-                <p>A Soul atua como gestora da operação.</p>
-                <p>Quando há formalização de aporte, aplica-se uma taxa de gestão sobre a transação, referente a intermediação, contratos, acompanhamento e organização do ciclo.</p>
-                <p>Não há cobrança antecipada para cadastro ou participação.</p>
+                <p>Simples: a Soul só cobra quando uma parceria é fechada.</p>
+                <p>Nesse momento, aplica-se uma taxa de gestão sobre o valor da parceria — que cobre a intermediação, o contrato e o acompanhamento do começo ao fim.</p>
+                <p>Cadastro e participação são gratuitos.</p>
             </div>
         ),
     },
     {
-        question: '5) A Soul interfere na carreira do atleta?',
+        question: '5) A Soul interfere na minha carreira?',
         answer: (
             <div className="space-y-4">
                 <p>Não.</p>
-                <p>O atleta mantém sua independência.</p>
-                <p>A Soul atua exclusivamente na organização da relação com as empresas no escopo do contrato estabelecido, garantindo processo, regras e acompanhamento.</p>
-                <p>Decisões técnicas, esportivas e estratégicas da carreira continuam sendo do atleta e seu time.</p>
+                <p>Você continua tomando todas as decisões da sua carreira.</p>
+                <p>A Soul atua só na organização das parcerias com empresas — cuidando do contrato, das regras e do acompanhamento dentro do combinado.</p>
+                <p>O restante — treinos, competições, escolhas técnicas — é tudo seu.</p>
             </div>
         ),
     },
