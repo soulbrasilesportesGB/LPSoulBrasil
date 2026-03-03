@@ -1,19 +1,22 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter, Bebas_Neue } from 'next/font/google';
+import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 import CookieBanner from "@/components/ui/cookie-banner";
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
 });
 
-const bebas = Bebas_Neue({ 
-  weight: '400',
-  subsets: ['latin'],
+const bebas = localFont({
+  src: [
+    { path: '../public/fonts/BebasNeue-latin.woff2', weight: '400', style: 'normal' },
+    { path: '../public/fonts/BebasNeue-latin-ext.woff2', weight: '400', style: 'normal' },
+  ],
   variable: '--font-bebas',
   display: 'swap',
 });
@@ -47,7 +50,7 @@ export const metadata: Metadata = {
     google: 'your-google-site-verification',
   },
   icons: {
-    icon: '/favicon.png', // Coloque seu arquivo favicon.png dentro da pasta /public
+    icon: '/favicon.png',
   },
 };
 
