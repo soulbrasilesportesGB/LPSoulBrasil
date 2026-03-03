@@ -55,7 +55,7 @@ export default function AthletePage() {
                         <Link href="https://app.soulbrasil.co">
                             <Button
                                 size="lg"
-                                className="bg-soul-teal hover:bg-soul-dark text-white font-bebas text-4xl px-16 py-12 rounded-2xl shadow-2xl hover:scale-105 transition-all"
+                                className="bg-soul-teal hover:bg-soul-dark text-white font-bebas text-2xl md:text-4xl px-8 md:px-16 py-6 md:py-12 rounded-2xl shadow-2xl hover:scale-105 transition-all w-full sm:w-auto"
                             >
                                 CADASTRAR MEU PERFIL
                             </Button>

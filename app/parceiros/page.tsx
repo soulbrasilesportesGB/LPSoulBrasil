@@ -55,14 +55,14 @@ export default function ParceirosPage() {
                         <Link href="https://app.soulbrasil.co">
                             <Button
                                 size="lg"
-                                className="bg-soul-teal hover:bg-soul-dark text-white font-bebas text-4xl px-16 py-12 rounded-2xl shadow-2xl hover:scale-105 transition-all"
+                                className="bg-soul-teal hover:bg-soul-dark text-white font-bebas text-2xl md:text-4xl px-8 md:px-16 py-6 md:py-12 rounded-2xl shadow-2xl hover:scale-105 transition-all w-full sm:w-auto"
                             >
                                 CADASTRAR EMPRESA
                             </Button>
                         </Link>
                         <p className="mt-8 text-gray-500 text-xl font-medium max-w-xl mx-auto leading-relaxed">
                             Sem informalidade. Sem improviso. <br />
-                            <span className="text-soul-teal font-bold uppercase tracking-wider text-sm">Apenas processo e governança.</span>
+                            <span className="text-soul-teal font-bold uppercase tracking-wider text-sm">Só parcerias com regras claras.</span>
                         </p>
                     </motion.div>
                 </div>

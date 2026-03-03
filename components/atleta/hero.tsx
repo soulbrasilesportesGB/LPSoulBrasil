@@ -66,7 +66,7 @@ export function AthleteHero() {
                             <Link href="https://app.soulbrasil.co">
                                 <Button
                                     size="lg"
-                                    className="bg-soul-yellow hover:bg-soul-orange text-soul-dark font-bold text-xl px-10 py-8 rounded-full shadow-xl hover:scale-105 transition-all group"
+                                    className="bg-soul-yellow hover:bg-soul-orange text-soul-dark font-bold text-lg md:text-xl px-8 md:px-10 py-5 md:py-8 rounded-full shadow-xl hover:scale-105 transition-all group w-full sm:w-auto"
                                 >
                                     CADASTRAR MEU PERFIL
                                     <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
