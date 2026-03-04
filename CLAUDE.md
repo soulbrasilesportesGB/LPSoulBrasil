@@ -1,13 +1,82 @@
-# CLAUDE.md — Soul Brasil Esportes (Site Institucional)
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+---
 
 ## Sobre o Projeto
 Site institucional da Soul Brasil Esportes — plataforma que conecta atletas e empresas com governança, gestão profissional e contratos. Não é ONG, não é doação. É estrutura, segurança e profissionalismo.
 
-## Stack (preencher conforme o projeto real)
-- Framework: (ex: Next.js, Astro, WordPress...)
-- Linguagem: (ex: TypeScript, JavaScript...)
-- Estilização: (ex: Tailwind CSS, CSS Modules...)
-- Hospedagem: (ex: Vercel, Netlify...)
+---
+
+## Stack
+
+- **Framework:** Next.js 13.5 (App Router)
+- **Linguagem:** TypeScript
+- **Estilização:** Tailwind CSS com paleta Soul Brasil customizada; shadcn/ui (Radix UI) para componentes
+- **Animações:** Framer Motion
+- **Backend/DB:** Supabase (com fallback para mock quando variáveis de ambiente ausentes)
+- **Hospedagem:** Netlify (`@netlify/plugin-nextjs`)
+- **Fontes:** Bebas Neue (local, display), Inter (Google Fonts, body)
+
+---
+
+## Comandos
+
+```bash
+npm run dev    # Servidor de desenvolvimento
+npm run build  # Build de produção (Next.js)
+npm run start  # Iniciar servidor de produção
+npm run lint   # Verificação com ESLint
+```
+
+Build no Netlify: `npx next build` → publish `.next`
+
+---
+
+## Arquitetura
+
+### Roteamento (App Router)
+Todas as rotas ficam em `/app`. Páginas principais:
+
+| Rota | Propósito |
+|---|---|
+| `/` | Home institucional |
+| `/atleta` | Landing page para atletas (note: singular) |
+| `/parceiros` | Landing page para empresas parceiras |
+| `/sobre`, `/contato`, `/carreira`, `/projetos` | Páginas institucionais |
+| `/blog/[slug]` | Posts do blog (Supabase + Markdown) |
+| `/blog/categoria/[slug]` | Blog por categoria |
+| `/admin` | Área admin protegida (login + gestão de blog) |
+| `/governanca`, `/lgpd`, `/politica-*`, `/termos-de-uso` | Páginas legais |
+
+Redirect permanente: `/atletas` → `/atleta` (configurado em `next.config.js`).
+
+### Componentes
+- `/components/ui/` — shadcn/ui + componentes customizados do site (hero, cta-block, service-card, etc.)
+- `/components/layout/` — `navbar.tsx` e `footer.tsx`
+- `/components/atleta/`, `/components/parceiros/`, `/components/blog/`, `/components/admin/` — componentes específicos por seção
+
+### Backend
+- `/lib/supabase.ts` — factory do cliente Supabase
+- `/lib/blog-db.ts` — lógica de banco de dados do blog
+- `/app/api/` — API routes: waitlist, admin auth, CRUD do blog
+- `/middleware.ts` — protege `/admin/*` com cookie `sb_admin`; redireciona para `/admin/login` se não autenticado
+
+### Banco de Dados
+Migrações em `/supabase/migrations/`. Variáveis de ambiente necessárias:
+```
+NEXT_PUBLIC_SUPABASE_URL
+NEXT_PUBLIC_SUPABASE_ANON_KEY
+```
+O app funciona sem elas (dados mock como fallback).
+
+### SEO
+- `/app/sitemap.ts` — sitemap dinâmico
+- `/app/robots.txt/` — robots.txt
+- `/app/rss.xml/` — RSS feed do blog
+
+---
 
 ## Identidade de Marca
 
@@ -33,6 +102,8 @@ Site institucional da Soul Brasil Esportes — plataforma que conecta atletas e 
 - "Lei de incentivo" (não é o modelo da Soul)
 - "Equity" / "investimento" (leitura financeira equivocada)
 
+---
+
 ## Produtos
 
 ### Programa Soul Atleta em Foco
@@ -40,6 +111,8 @@ Forma estruturada de empresas apoiarem atletas com gestão, segurança e governa
 
 ### Aporte Direto
 Intermediação consultiva para empresa que quer apoiar um atleta específico. Dupla curadoria (valida atleta e empresa), contratos claros, fee transacional, gestão opcional.
+
+---
 
 ## Públicos
 
@@ -55,6 +128,8 @@ Intermediação consultiva para empresa que quer apoiar um atleta específico. D
 - Valorizam acesso a empresas, segurança e profissionalismo
 - Atleta é parte contratual — não beneficiário
 
+---
+
 ## Narrativa Institucional
 
 **Problema que a Soul resolve:**
@@ -66,6 +141,8 @@ Atua como ponte, vitrine qualificada e gestora da relação empresa–atleta —
 
 **Promessa central:**
 Visibilidade qualificada + operação organizada para que empresas apoiem atletas com segurança, contratos, processo e transparência real.
+
+---
 
 ## Instruções para o Claude
 
