@@ -63,7 +63,7 @@ export function AthleteHero() {
                         </motion.p>
 
                         <motion.div variants={fadeInUp}>
-                            <Link href="https://app.soulbrasil.co">
+                            <Link href="https://app.soulbrasil.co" target="_blank" rel="noopener noreferrer">
                                 <Button
                                     size="lg"
                                     className="bg-soul-yellow hover:bg-soul-orange text-soul-dark font-bold text-lg md:text-xl px-8 md:px-10 py-5 md:py-8 rounded-full shadow-xl hover:scale-105 transition-all group w-full sm:w-auto"
