@@ -52,12 +52,12 @@ export default function ParceirosPage() {
                         transition={{ duration: 0.6, delay: 0.1 }}
                         viewport={{ once: true }}
                     >
-                        <Link href="https://app.soulbrasil.co" target="_blank" rel="noopener noreferrer">
+                        <Link href="https://soulbrasilesportes.zohobookings.com/#/4760584000000053138" target="_blank" rel="noopener noreferrer">
                             <Button
                                 size="lg"
                                 className="bg-soul-teal hover:bg-soul-dark text-white font-bebas text-2xl md:text-4xl px-8 md:px-16 py-6 md:py-12 rounded-2xl shadow-2xl hover:scale-105 transition-all w-full sm:w-auto"
                             >
-                                CADASTRAR EMPRESA
+                                AGENDAR UMA CONVERSA
                             </Button>
                         </Link>
                         <p className="mt-8 text-gray-500 text-xl font-medium max-w-xl mx-auto leading-relaxed">
